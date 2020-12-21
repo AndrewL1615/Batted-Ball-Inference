@@ -16,7 +16,7 @@ batted <- batted %>%
 # Convert factor columns into numeric
 for(i in 8:19){
   batted[,i] <- as.numeric(sub("%",
-                                   "",
-                                   batted[,i],
-                                   fixed = F))/100
+                               "",
+                               batted[,i],
+                               fixed = F))/100
 }
